@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@android:color/holo_red_dark"
+
+        />
+
+    <com.miguelcatalan.materialsearchview.MaterialSearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:searchBackground="@android:color/holo_green_dark"
+        app:searchSuggestionBackground="@android:color/holo_green_dark"
+        app:searchCloseIcon="@drawable/baseline_close_24"
+        app:searchBackIcon="@drawable/baseline_arrow_back_24"
+        app:searchSuggestionIcon="@drawable/baseline_arrow_back_ios_new_24"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/list_view"
+        android:divider="@color/black"
+        android:dividerHeight="2dp"/>
+
+
+
+</RelativeLayout>
